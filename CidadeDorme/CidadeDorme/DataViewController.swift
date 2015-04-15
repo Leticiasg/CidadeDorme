@@ -11,6 +11,7 @@ import UIKit
 class DataViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
+    
     var dataObject: AnyObject?
 
 
@@ -32,6 +33,8 @@ class DataViewController: UIViewController {
             self.dataLabel!.text = ""
         }
     }
+    
+    
 
 
 }
