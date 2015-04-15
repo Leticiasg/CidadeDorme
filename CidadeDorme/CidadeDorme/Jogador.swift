@@ -9,14 +9,22 @@
 import UIKit
 
 class Jogador: NSObject {
-    init( var a: [String], var b: String){
-        messageSet = a
-        image = b
+    
+    init( var falas: [String], var imagem: String, var meuNome:String){
+        nome = meuNome
+        messageSet = falas
+        image = imagem
     }
+    var nome = ""
     var image = ""
     var messageSet = [""]
     var message: String{
         var a:Int = (Int)(arc4random() >> 1) % messageSet.count
         return (messageSet[a])
     }
+    var clone:Jogador
+    {
+        return Jogador(falas: self.messageSet, imagem: self.image, meuNome: self.nome)
+    }
+    
 }
