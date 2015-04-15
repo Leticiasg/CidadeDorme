@@ -85,15 +85,9 @@
 		6FFFA14C1ADD4FDE003283F9 /* CidadeDorme */ = {
 			isa = PBXGroup;
 			children = (
-				077A88BF1ADEABB20013FC28 /* Jogador.swift */,
-				077A88C11ADEAD320013FC28 /* GameScreen.swift */,
-				6FFFA14F1ADD4FDE003283F9 /* AppDelegate.swift */,
-				6FFFA1511ADD4FDE003283F9 /* RootViewController.swift */,
-				6FFFA1531ADD4FDE003283F9 /* DataViewController.swift */,
-				6FFFA1551ADD4FDE003283F9 /* ModelController.swift */,
-				6FFFA1571ADD4FDE003283F9 /* Main.storyboard */,
-				6FFFA15A1ADD4FDE003283F9 /* Images.xcassets */,
-				6FFFA15C1ADD4FDE003283F9 /* LaunchScreen.xib */,
+				6FFFA1731ADECC8A003283F9 /* Model */,
+				6FFFA1751ADECCD0003283F9 /* Controler */,
+				6FFFA1741ADECCAA003283F9 /* View */,
 				6FFFA14D1ADD4FDE003283F9 /* Supporting Files */,
 			);
 			path = CidadeDorme;
@@ -122,6 +116,36 @@
 				6FFFA1681ADD4FDE003283F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FFFA1731ADECC8A003283F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				077A88C11ADEAD320013FC28 /* GameScreen.swift */,
+				077A88BF1ADEABB20013FC28 /* Jogador.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6FFFA1741ADECCAA003283F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6FFFA1571ADD4FDE003283F9 /* Main.storyboard */,
+				6FFFA15C1ADD4FDE003283F9 /* LaunchScreen.xib */,
+				6FFFA15A1ADD4FDE003283F9 /* Images.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6FFFA1751ADECCD0003283F9 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				6FFFA14F1ADD4FDE003283F9 /* AppDelegate.swift */,
+				6FFFA1511ADD4FDE003283F9 /* RootViewController.swift */,
+				6FFFA1531ADD4FDE003283F9 /* DataViewController.swift */,
+				6FFFA1551ADD4FDE003283F9 /* ModelController.swift */,
+			);
+			name = Controler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
