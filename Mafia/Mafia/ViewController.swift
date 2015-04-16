@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MultipeerConnectivity
 
 class ViewController: UIViewController {
 
@@ -19,7 +20,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+   /* @IBAction func showBrowser(sender: UIButton) {
+        // Show the browser view controller
+        self.presentViewController(self.browser, animated: true, completion: nil)
+    }*/
 
 }
 

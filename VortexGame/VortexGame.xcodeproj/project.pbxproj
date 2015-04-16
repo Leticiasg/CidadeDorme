@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F7FACF21ADF83DB0073AA45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACF11ADF83DB0073AA45 /* AppDelegate.swift */; };
+		6F7FACF41ADF83DB0073AA45 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FACF31ADF83DB0073AA45 /* GameScene.sks */; };
+		6F7FACF61ADF83DB0073AA45 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACF51ADF83DB0073AA45 /* GameScene.swift */; };
+		6F7FACF81ADF83DB0073AA45 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACF71ADF83DB0073AA45 /* GameViewController.swift */; };
+		6F7FACFB1ADF83DB0073AA45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FACF91ADF83DB0073AA45 /* Main.storyboard */; };
+		6F7FAD001ADF83DB0073AA45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FACFE1ADF83DB0073AA45 /* LaunchScreen.xib */; };
+		6F7FAD0C1ADF83DC0073AA45 /* VortexGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FAD0B1ADF83DC0073AA45 /* VortexGameTests.swift */; };
+		6F7FAD221ADF89840073AA45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FAD211ADF89840073AA45 /* Images.xcassets */; };
+		6F7FAD261ADF8B450073AA45 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FAD231ADF8B450073AA45 /* level1.txt */; };
+		6F7FAD271ADF8B450073AA45 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FAD241ADF8B450073AA45 /* level2.txt */; };
+		6F7FAD281ADF8B450073AA45 /* level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FAD251ADF8B450073AA45 /* level3.txt */; };
+		6F7FAD2A1ADF8B730073AA45 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FAD291ADF8B730073AA45 /* background.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F7FAD061ADF83DC0073AA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7FACE41ADF83DB0073AA45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F7FACEB1ADF83DB0073AA45;
+			remoteInfo = VortexGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F7FACEC1ADF83DB0073AA45 /* VortexGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VortexGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7FACF01ADF83DB0073AA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F7FACF11ADF83DB0073AA45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F7FACF31ADF83DB0073AA45 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		6F7FACF51ADF83DB0073AA45 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6F7FACF71ADF83DB0073AA45 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6F7FACFA1ADF83DB0073AA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F7FACFF1ADF83DB0073AA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6F7FAD051ADF83DC0073AA45 /* VortexGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VortexGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7FAD0A1ADF83DC0073AA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F7FAD0B1ADF83DC0073AA45 /* VortexGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VortexGameTests.swift; sourceTree = "<group>"; };
+		6F7FAD211ADF89840073AA45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F7FAD231ADF8B450073AA45 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level1.txt; path = ../../../HackingWithSwift/project26/Project26/Content/level1.txt; sourceTree = "<group>"; };
+		6F7FAD241ADF8B450073AA45 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level2.txt; path = ../../../HackingWithSwift/project26/Project26/Content/level2.txt; sourceTree = "<group>"; };
+		6F7FAD251ADF8B450073AA45 /* level3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level3.txt; path = ../../../HackingWithSwift/project26/Project26/Content/level3.txt; sourceTree = "<group>"; };
+		6F7FAD291ADF8B730073AA45 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../../HackingWithSwift/project26/Project26/Content/background.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F7FACE91ADF83DB0073AA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7FAD021ADF83DC0073AA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F7FACE31ADF83DB0073AA45 = {
+			isa = PBXGroup;
+			children = (
+				6F7FACEE1ADF83DB0073AA45 /* VortexGame */,
+				6F7FAD081ADF83DC0073AA45 /* VortexGameTests */,
+				6F7FACED1ADF83DB0073AA45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F7FACED1ADF83DB0073AA45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FACEC1ADF83DB0073AA45 /* VortexGame.app */,
+				6F7FAD051ADF83DC0073AA45 /* VortexGameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F7FACEE1ADF83DB0073AA45 /* VortexGame */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FACF11ADF83DB0073AA45 /* AppDelegate.swift */,
+				6F7FACF31ADF83DB0073AA45 /* GameScene.sks */,
+				6F7FACF51ADF83DB0073AA45 /* GameScene.swift */,
+				6F7FACF71ADF83DB0073AA45 /* GameViewController.swift */,
+				6F7FACF91ADF83DB0073AA45 /* Main.storyboard */,
+				6F7FACFE1ADF83DB0073AA45 /* LaunchScreen.xib */,
+				6F7FAD211ADF89840073AA45 /* Images.xcassets */,
+				6F7FACEF1ADF83DB0073AA45 /* Supporting Files */,
+			);
+			path = VortexGame;
+			sourceTree = "<group>";
+		};
+		6F7FACEF1ADF83DB0073AA45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FAD291ADF8B730073AA45 /* background.jpg */,
+				6F7FAD231ADF8B450073AA45 /* level1.txt */,
+				6F7FAD241ADF8B450073AA45 /* level2.txt */,
+				6F7FAD251ADF8B450073AA45 /* level3.txt */,
+				6F7FACF01ADF83DB0073AA45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F7FAD081ADF83DC0073AA45 /* VortexGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FAD0B1ADF83DC0073AA45 /* VortexGameTests.swift */,
+				6F7FAD091ADF83DC0073AA45 /* Supporting Files */,
+			);
+			path = VortexGameTests;
+			sourceTree = "<group>";
+		};
+		6F7FAD091ADF83DC0073AA45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FAD0A1ADF83DC0073AA45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F7FACEB1ADF83DB0073AA45 /* VortexGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7FAD0F1ADF83DC0073AA45 /* Build configuration list for PBXNativeTarget "VortexGame" */;
+			buildPhases = (
+				6F7FACE81ADF83DB0073AA45 /* Sources */,
+				6F7FACE91ADF83DB0073AA45 /* Frameworks */,
+				6F7FACEA1ADF83DB0073AA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VortexGame;
+			productName = VortexGame;
+			productReference = 6F7FACEC1ADF83DB0073AA45 /* VortexGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F7FAD041ADF83DC0073AA45 /* VortexGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7FAD121ADF83DC0073AA45 /* Build configuration list for PBXNativeTarget "VortexGameTests" */;
+			buildPhases = (
+				6F7FAD011ADF83DC0073AA45 /* Sources */,
+				6F7FAD021ADF83DC0073AA45 /* Frameworks */,
+				6F7FAD031ADF83DC0073AA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F7FAD071ADF83DC0073AA45 /* PBXTargetDependency */,
+			);
+			name = VortexGameTests;
+			productName = VortexGameTests;
+			productReference = 6F7FAD051ADF83DC0073AA45 /* VortexGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F7FACE41ADF83DB0073AA45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = LazyFox;
+				TargetAttributes = {
+					6F7FACEB1ADF83DB0073AA45 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					6F7FAD041ADF83DC0073AA45 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 6F7FACEB1ADF83DB0073AA45;
+					};
+				};
+			};
+			buildConfigurationList = 6F7FACE71ADF83DB0073AA45 /* Build configuration list for PBXProject "VortexGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F7FACE31ADF83DB0073AA45;
+			productRefGroup = 6F7FACED1ADF83DB0073AA45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F7FACEB1ADF83DB0073AA45 /* VortexGame */,
+				6F7FAD041ADF83DC0073AA45 /* VortexGameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F7FACEA1ADF83DB0073AA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7FAD281ADF8B450073AA45 /* level3.txt in Resources */,
+				6F7FAD261ADF8B450073AA45 /* level1.txt in Resources */,
+				6F7FAD001ADF83DB0073AA45 /* LaunchScreen.xib in Resources */,
+				6F7FAD271ADF8B450073AA45 /* level2.txt in Resources */,
+				6F7FAD221ADF89840073AA45 /* Images.xcassets in Resources */,
+				6F7FAD2A1ADF8B730073AA45 /* background.jpg in Resources */,
+				6F7FACF41ADF83DB0073AA45 /* GameScene.sks in Resources */,
+				6F7FACFB1ADF83DB0073AA45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7FAD031ADF83DC0073AA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F7FACE81ADF83DB0073AA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7FACF61ADF83DB0073AA45 /* GameScene.swift in Sources */,
+				6F7FACF81ADF83DB0073AA45 /* GameViewController.swift in Sources */,
+				6F7FACF21ADF83DB0073AA45 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7FAD011ADF83DC0073AA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7FAD0C1ADF83DC0073AA45 /* VortexGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F7FAD071ADF83DC0073AA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F7FACEB1ADF83DB0073AA45 /* VortexGame */;
+			targetProxy = 6F7FAD061ADF83DC0073AA45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F7FACF91ADF83DB0073AA45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F7FACFA1ADF83DB0073AA45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F7FACFE1ADF83DB0073AA45 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F7FACFF1ADF83DB0073AA45 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F7FAD0D1ADF83DC0073AA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F7FAD0E1ADF83DC0073AA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F7FAD101ADF83DC0073AA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VortexGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F7FAD111ADF83DC0073AA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VortexGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F7FAD131ADF83DC0073AA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VortexGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VortexGame.app/VortexGame";
+			};
+			name = Debug;
+		};
+		6F7FAD141ADF83DC0073AA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VortexGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VortexGame.app/VortexGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F7FACE71ADF83DB0073AA45 /* Build configuration list for PBXProject "VortexGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7FAD0D1ADF83DC0073AA45 /* Debug */,
+				6F7FAD0E1ADF83DC0073AA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F7FAD0F1ADF83DC0073AA45 /* Build configuration list for PBXNativeTarget "VortexGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7FAD101ADF83DC0073AA45 /* Debug */,
+				6F7FAD111ADF83DC0073AA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6F7FAD121ADF83DC0073AA45 /* Build configuration list for PBXNativeTarget "VortexGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7FAD131ADF83DC0073AA45 /* Debug */,
+				6F7FAD141ADF83DC0073AA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F7FACE41ADF83DB0073AA45 /* Project object */;
+}

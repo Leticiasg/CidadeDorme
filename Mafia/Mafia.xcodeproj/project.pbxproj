@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		6F7FACAA1ADED7B20073AA45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACA91ADED7B20073AA45 /* AppDelegate.swift */; };
 		6F7FACAC1ADED7B20073AA45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACAB1ADED7B20073AA45 /* ViewController.swift */; };
-		6F7FACAF1ADED7B20073AA45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FACAD1ADED7B20073AA45 /* Main.storyboard */; };
 		6F7FACB11ADED7B20073AA45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FACB01ADED7B20073AA45 /* Images.xcassets */; };
 		6F7FACB41ADED7B20073AA45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FACB21ADED7B20073AA45 /* LaunchScreen.xib */; };
 		6F7FACC01ADED7B20073AA45 /* MafiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACBF1ADED7B20073AA45 /* MafiaTests.swift */; };
+		6F7FACCC1ADED98E0073AA45 /* Jogador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACCB1ADED98E0073AA45 /* Jogador.swift */; };
+		6F7FACD01ADED9BE0073AA45 /* Assassino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7FACCF1ADED9BE0073AA45 /* Assassino.swift */; };
+		6F7FACD61ADEDA7C0073AA45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7FACD41ADEDA7C0073AA45 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +32,14 @@
 		6F7FACA81ADED7B20073AA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F7FACA91ADED7B20073AA45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F7FACAB1ADED7B20073AA45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F7FACAE1ADED7B20073AA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F7FACB01ADED7B20073AA45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F7FACB31ADED7B20073AA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6F7FACB91ADED7B20073AA45 /* MafiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MafiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7FACBE1ADED7B20073AA45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F7FACBF1ADED7B20073AA45 /* MafiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MafiaTests.swift; sourceTree = "<group>"; };
+		6F7FACCB1ADED98E0073AA45 /* Jogador.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Jogador.swift; path = ../../CidadeDorme/CidadeDorme/Jogador.swift; sourceTree = "<group>"; };
+		6F7FACCF1ADED9BE0073AA45 /* Assassino.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Assassino.swift; path = ../../CidadeDorme/CidadeDorme/Assassino.swift; sourceTree = "<group>"; };
+		6F7FACD51ADEDA7C0073AA45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../CidadeDorme/CidadeDorme/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,9 @@
 		6F7FACA61ADED7B20073AA45 /* Mafia */ = {
 			isa = PBXGroup;
 			children = (
-				6F7FACA91ADED7B20073AA45 /* AppDelegate.swift */,
-				6F7FACAB1ADED7B20073AA45 /* ViewController.swift */,
-				6F7FACAD1ADED7B20073AA45 /* Main.storyboard */,
-				6F7FACB01ADED7B20073AA45 /* Images.xcassets */,
-				6F7FACB21ADED7B20073AA45 /* LaunchScreen.xib */,
+				6F7FACD31ADEDA0F0073AA45 /* Controller */,
+				6F7FACD11ADED9E60073AA45 /* Model */,
+				6F7FACD21ADED9F20073AA45 /* View */,
 				6F7FACA71ADED7B20073AA45 /* Supporting Files */,
 			);
 			path = Mafia;
@@ -110,6 +112,34 @@
 				6F7FACBE1ADED7B20073AA45 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F7FACD11ADED9E60073AA45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FACCF1ADED9BE0073AA45 /* Assassino.swift */,
+				6F7FACCB1ADED98E0073AA45 /* Jogador.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6F7FACD21ADED9F20073AA45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FACD41ADEDA7C0073AA45 /* Main.storyboard */,
+				6F7FACB01ADED7B20073AA45 /* Images.xcassets */,
+				6F7FACB21ADED7B20073AA45 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6F7FACD31ADEDA0F0073AA45 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F7FACA91ADED7B20073AA45 /* AppDelegate.swift */,
+				6F7FACAB1ADED7B20073AA45 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F7FACAF1ADED7B20073AA45 /* Main.storyboard in Resources */,
+				6F7FACD61ADEDA7C0073AA45 /* Main.storyboard in Resources */,
 				6F7FACB41ADED7B20073AA45 /* LaunchScreen.xib in Resources */,
 				6F7FACB11ADED7B20073AA45 /* Images.xcassets in Resources */,
 			);
@@ -213,6 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F7FACAC1ADED7B20073AA45 /* ViewController.swift in Sources */,
+				6F7FACCC1ADED98E0073AA45 /* Jogador.swift in Sources */,
+				6F7FACD01ADED9BE0073AA45 /* Assassino.swift in Sources */,
 				6F7FACAA1ADED7B20073AA45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,20 +268,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6F7FACAD1ADED7B20073AA45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F7FACAE1ADED7B20073AA45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F7FACB21ADED7B20073AA45 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6F7FACB31ADED7B20073AA45 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6F7FACD41ADEDA7C0073AA45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F7FACD51ADEDA7C0073AA45 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +441,7 @@
 				6F7FACC51ADED7B20073AA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6F7FACC61ADED7B20073AA45 /* Build configuration list for PBXNativeTarget "MafiaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +450,7 @@
 				6F7FACC81ADED7B20073AA45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

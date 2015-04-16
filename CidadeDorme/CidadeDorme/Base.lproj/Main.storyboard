@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PxF-Ax-wPy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
@@ -13,17 +13,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="PxF-Ax-wPy" kind="relationship" relationship="rootViewController" id="VVl-q2-008"/>
+                        <segue destination="hzS-jB-y9W" kind="relationship" relationship="rootViewController" id="iwW-jc-dhb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WtI-rh-v1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-598.5" y="398"/>
+            <point key="canvasLocation" x="183" y="476"/>
         </scene>
         <!--Tela_Inicial-->
         <scene sceneID="3qM-eY-iJ1">
             <objects>
-                <viewController storyboardIdentifier="DataViewController" title="Tela_Inicial" id="hzS-jB-y9W" customClass="DataViewController" customModule="CidadeDorme" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataViewController" title="Tela_Inicial" id="hzS-jB-y9W" customClass="ViewController" customModule="Mafia" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6LC-1I-4vP"/>
                         <viewControllerLayoutGuide type="bottom" id="a4F-Wq-f2I"/>
@@ -90,6 +90,9 @@
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="126" y="425" width="118" height="30"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="showBrowser:" destination="hzS-jB-y9W" eventType="touchUpInside" id="r3T-QO-6kk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -116,14 +119,103 @@
                             <constraint firstItem="i7n-lc-4In" firstAttribute="trailing" secondItem="wFW-NB-ba9" secondAttribute="trailing" id="zIS-yv-SWb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ij7-ku-ucF"/>
                     <connections>
+                        <outlet property="Browser" destination="wLX-D1-bqd" id="KSP-1R-jvz"/>
                         <outlet property="dataLabel" destination="i7n-lc-4In" id="8Kj-KN-eO6"/>
-                        <segue destination="YBG-Dl-2el" kind="show" identifier="NewGame" id="PE1-X6-NRP"/>
+                        <segue destination="TzW-0x-F1Z" kind="show" id="ayi-sa-PEQ"/>
+                        <segue destination="EtT-en-HQn" kind="show" id="sm5-nT-xkx"/>
+                        <segue destination="p4N-gi-D6P" kind="show" id="Xlh-0e-1bA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHE-GN-Yf3" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="933" y="476"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xLu-HE-yzB">
+            <objects>
+                <viewController id="TzW-0x-F1Z" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KRd-94-TP4"/>
+                        <viewControllerLayoutGuide type="bottom" id="NnJ-pd-6pE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xoc-rg-IDv">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKT-Tc-WKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755" y="478"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6pb-cX-Eb2">
+            <objects>
+                <viewController id="EtT-en-HQn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nOH-q2-Y3W"/>
+                        <viewControllerLayoutGuide type="bottom" id="dmc-nZ-tGi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Va0-AI-jeK">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NM4-Af-yWd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1767" y="1218"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fas-La-B9d">
+            <objects>
+                <viewController id="p4N-gi-D6P" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DSb-27-ZMd"/>
+                        <viewControllerLayoutGuide type="bottom" id="2r7-DO-uuR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ayf-MX-Ixp">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZg-8s-FdV">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Prosseguir">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="164" y="339" width="73" height="30"/>
+                                </variation>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número de Jogadores" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K8i-Qs-EMB">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="119" y="285" width="162" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="iZg-8s-FdV"/>
+                                <exclude reference="K8i-Qs-EMB"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="iZg-8s-FdV"/>
+                                <include reference="K8i-Qs-EMB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <segue destination="YBG-Dl-2el" kind="show" id="aSE-l3-zbQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZP-yX-rb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755" y="-332"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="toF-ap-9C7">
@@ -209,29 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xuz-3P-j1W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2238" y="482"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="3GU-QQ-JyJ">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BPC-vx-IW7" sceneMemberID="firstResponder"/>
-                <viewController id="PxF-Ax-wPy" customClass="RootViewController" customModule="CidadeDorme" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="17i-ZA-3zy"/>
-                        <viewControllerLayoutGuide type="bottom" id="8Yh-h8-jIR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cc6-cB-pgf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ILf-IT-Y7z"/>
-                    <connections>
-                        <segue destination="hzS-jB-y9W" kind="show" id="7eg-c1-Kr8"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="181" y="476"/>
+            <point key="canvasLocation" x="2550" y="-332"/>
         </scene>
     </scenes>
     <resources>
